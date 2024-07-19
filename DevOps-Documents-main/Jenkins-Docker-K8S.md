@@ -132,7 +132,7 @@ $ kubectl version --short --client <br/>
 	$ sudo vi .kube/config  <br/>
 
  3) Execute below commands in Jenkins Server and paste kube config file for ubuntu user <br/>
-	$ Go to Ubuntu home directory by  executing this command: cd ~ <br/>
+	$ Go to Ubuntu home directory by  executing this command: cd /home/ubuntu <br/>
 	$ Run ls -la to see  .kube  <br/>
 	$ Create Config file: sudo vi .kube/config  <br/>
 
