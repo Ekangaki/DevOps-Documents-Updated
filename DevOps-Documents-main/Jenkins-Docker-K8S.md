@@ -139,8 +139,6 @@ $ kubectl version --short --client <br/>
 	$ sudo vi .kube/config  <br/>
         $ copy the config file from Management and paste
  
- $ Create Config file: sudo vi .kube/config  <br/>
-        $ cd /var/lib/jenkins <br/>
 
 4) check eks nodes <br/>
 	$ kubectl get nodes 
