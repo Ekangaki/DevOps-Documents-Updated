@@ -132,9 +132,15 @@ $ kubectl version --short --client <br/>
 	$ sudo vi .kube/config  <br/>
 
  3) Execute below commands in Jenkins Server and paste kube config file for ubuntu user <br/>
-	$ Go to Ubuntu home directory by  executing this command: cd /home/ubuntu <br/>
-	$ Run ls -la to see  .kube  <br/>
-	$ Create Config file: sudo vi .kube/config  <br/>
+	$ Go to Ubuntu home directory by  executing this command <br/>
+        $ cd /home/ubuntu <br/>
+	$ sudo mkdir .kube  <br/>
+        $ ls -la <br/>
+	$ sudo vi .kube/config  <br/>
+        $ copy the config file from Management and paste
+ 
+ $ Create Config file: sudo vi .kube/config  <br/>
+        $ cd /var/lib/jenkins <br/>
 
 4) check eks nodes <br/>
 	$ kubectl get nodes 
