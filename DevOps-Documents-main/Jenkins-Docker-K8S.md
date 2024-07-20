@@ -61,7 +61,6 @@ $ sudo docker version
 3) Install AWS CLI latest version using below commands 
 
 	$ sudo apt install unzip <br/>
-	$ cd  <br/>
 	$ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" <br/>
 	$ unzip awscliv2.zip <br/>
 	$ sudo ./aws/install <br/>
