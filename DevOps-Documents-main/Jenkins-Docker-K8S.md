@@ -139,9 +139,28 @@ $ kubectl version --short --client <br/>
 	$ sudo vi .kube/config  <br/>
         $ copy the config file from Management and paste
  
+4) Authentication
+       # Configure AWS CLI:
+       $ aws configure
+       # Enter your AWS credentials and default settings.
+       $ Access_keys
+       $ Secret_keys
+       $ us-east-1
 
-4) check eks nodes <br/>
-	$ kubectl get nodes 
+# Install AWS IAM Authenticator:
+curl -o aws-iam-authenticator https://amazon-eks.s3.us-east-1.amazonaws.com/1.20.7/2021-07-05/bin/linux/amd64/aws-iam-authenticator
+chmod +x ./aws-iam-authenticator
+sudo mv aws-iam-authenticator /usr/local/bin
+
+# Update kubeconfig for EKS Cluster:
+
+        $ aws eks --region us-west-2 update-kubeconfig --name my-eks-cluster <br/>
+
+# Verify the Configuration:
+        $ kubectl get nodes <br/>
+	
+5) check eks nodes <br/>
+	$ kubectl get nodes <br/>
 
 **Note: We should be able to see EKS cluster nodes here.**
 
